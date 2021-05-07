@@ -1,7 +1,11 @@
-function Menuitem() {
+import './menuitem.css';
+
+function Menuitem(props) {
+    const {text} = props;
+    
     return (
-      <div>
-        Menuitem
+      <div className="menuitem-container">
+        <div className="menuitem-text">{text}</div>
       </div>
     );
   }
