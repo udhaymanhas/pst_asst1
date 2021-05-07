@@ -1,6 +1,6 @@
 .contentbody-container{
-    margin-left: 20%;
     background-color: yellow;
-    width: 80%;
     height: 100vh;
+    flex: 1;
+
 }
