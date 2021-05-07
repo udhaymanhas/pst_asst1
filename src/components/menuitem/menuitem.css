@@ -8,3 +8,7 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.menuitem-text{
+    text-align: center;
+}

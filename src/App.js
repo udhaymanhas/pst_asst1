@@ -1,26 +1,19 @@
+import React, { useState } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 
-import Sidebar from "./components/sidebar/sidebar"
+import Sidebar from "./components/sidebar/sidebar";
+import ContentBody from "./components/contentBody/contentBody";
 
 function App() {
+
+  const [component, setComponent] = useState(0);
+
   return (
-    <div className="App">
-      <Sidebar/>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+    <div className="app-container">
+      <Sidebar setComponent={setComponent}/>
+      <ContentBody component={component}/>
     </div>
   );
 }
