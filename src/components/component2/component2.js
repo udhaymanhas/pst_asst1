@@ -1,6 +1,6 @@
 function Component2() {
     return (
-      <div style={{padding:20}}>
+      <div style={{padding:20, width:'80%'}}>
       <div>
         <h1>
           Component 2
