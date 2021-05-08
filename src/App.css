@@ -1,3 +1,10 @@
+html {
+  --color-primary: #303f9f;
+  --color-light: #666ad1;
+  --color-dark: #001970;
+  --color-primary-red: #c60055;
+}
+
 .app-container{
   display: flex;
   width: 100%;

@@ -1,5 +1,5 @@
 .sidebar-container{
-    background-color: #002984;
+    background-color:var(--color-dark);
     width: 20%;
     height: 100vh;
     margin-top: 0px;
