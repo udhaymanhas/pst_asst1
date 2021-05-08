@@ -8,8 +8,7 @@
 }
 
 .menu-item-button{
-    background-color: #666ad1;
-    /* border: 1px solid red; */
+    background-color: var(--color-light);
     display: flex;
     width: 90%;
     align-items: center;
@@ -20,7 +19,7 @@
 }
 
 .active, .menu-item-button:hover {
-    background-color: #303f9f;
+    background-color: var(--color-primary);
     box-shadow: 0px 15px 20px rgba(102, 106, 209, 0.4);
     color: #fff;
     transform: translateY(-2px);
@@ -31,7 +30,6 @@
 }
 
 .menu-item-remove-button{
-    /* border: 1px solid white; */
     display: flex;
     width: 25px;
     height: 25px;
@@ -46,7 +44,7 @@
 }
 
 .menu-item-remove-button:hover {
-    background-color: #c60055;
+    background-color: var(--color-primary-red);
     box-shadow: 0px 5px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-2px);
