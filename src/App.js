@@ -5,14 +5,48 @@ import './App.css';
 import Sidebar from "./components/sidebar/sidebar";
 import ContentBody from "./components/contentBody/contentBody";
 
-function App() {
+import Component1 from "./components/component1/component1"
+import Component2 from "./components/component2/component2"
+import Component3 from "./components/component3/component3"
 
-  const [component, setComponent] = useState(0);
+function App() {
+  let menuItemsList = [
+    {
+      text: 'Component 1',
+      id: 1,
+    },
+    {
+      text: 'Component 2',
+      id: 2,
+    },
+    {
+      text: 'Component 3',
+      id: 3,
+    }
+  ]
+
+  const [componentId, setComponentId] = useState(0);
+  const [menuItems, updateMenuItems] = useState(menuItemsList);
+
+  const removeMenuItem = (id) => {
+    let filteredMenuItems = menuItems.filter(item => item.id !== id);
+    updateMenuItems(filteredMenuItems);
+  };
 
   return (
     <div className="app-container">
-      <Sidebar setComponent={setComponent}/>
-      <ContentBody component={component}/>
+      <Sidebar 
+        menuItems={menuItems} 
+        removeMenuItem={removeMenuItem} 
+        setComponentId={setComponentId} 
+        componentId={componentId}
+      />
+      <ContentBody>
+        {componentId === 0 && <h1>No Component Selected</h1>}
+        {componentId === 1 && <Component1/>}
+        {componentId === 2 && <Component2/>}
+        {componentId === 3 && <Component3/>}
+      </ContentBody>
     </div>
   );
 }
