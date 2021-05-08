@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 import './App.css';
 
-import Sidebar from "./components/sidebar/sidebar";
-import ContentBody from "./components/contentBody/contentBody";
+import Sidebar from "./components/sidebar/Sidebar";
+import ContentBody from "./components/contentBody/ContentBody";
 
-import Component1 from "./components/component1/component1"
-import Component2 from "./components/component2/component2"
-import Component3 from "./components/component3/component3"
+import Component1 from "./components/component1/Component1"
+import Component2 from "./components/component2/Component2"
+import Component3 from "./components/component3/Component3"
 
 function App() {
   let menuItemsList = [

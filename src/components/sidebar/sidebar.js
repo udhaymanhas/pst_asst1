@@ -1,6 +1,6 @@
 import './sidebar.css';
 
-import Menuitem from "./../menuitem/menuitem"
+import Menuitem from "../menuitem/Menuitem"
 
 function Sidebar(props) {
     const {menuItems, removeMenuItem, setComponentId, componentId} = props;
